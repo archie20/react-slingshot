@@ -35,6 +35,7 @@ dist
 
 #VSCode metadata
 .vscode
+.history/
 
 # Mac files
 .DS_Store

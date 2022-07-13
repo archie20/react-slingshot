@@ -17,7 +17,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        - key: npm-cache
+          key: npm-cache
       - run: npm run test
   analyze:
     docker:
@@ -25,7 +25,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        - key: npm-cache
+          key: npm-cache
       - run: npm audit
 workflows:
   npm-workflow:

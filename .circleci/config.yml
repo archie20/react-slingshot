@@ -8,7 +8,7 @@ jobs:
       - run: npm install
       - run: npm run lint
       - save_cache:
-          key: npm-cache
+          key: 1-npm-cache
           paths:
             - /node_modules
   test:
@@ -25,7 +25,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: npm-cache
+          key: 1-npm-cache
       - run: npm audit
 workflows:
   npm-workflow:
